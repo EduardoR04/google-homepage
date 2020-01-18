@@ -8,77 +8,92 @@
        Add CSS to search box
        Center Google logo
     */
-
-    ul {
-        border: 1px solid #e7e7e7;
-        background-color: #dddddd;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    li {
-        float: left;
-    }
-    
-    a {
-        display: block;
-        padding: 8px;
-    }
-    
-    img {
-        padding-top: 109px;
-    }
-
-    footer {
-        position: fixed;
-        bottom: 0;
-        
-    }
-
-    .google-buttons {
-        background-color: gray;
-        color: #5f6368;
-        font-family: arial, sans-serifsp;
-        font-size: 14px; 
-        border: 1px solid #f2f2f2;
-        border-radius: 4px;
-
-    }
     </style>
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="/img/favicon.ico" rel="shortcut icon">
+    <script src="https://kit.fontawesome.com/ca1b086a8b.js" crossorigin="anonymous"></script>
     </head>
     <body> 
-        <header>
-            <ul>
-                <li><a href = "">About</a></li>
-                <li><a href = "">Store</a></li>
-                <li style="float: right;"><a href = "">Images</a></li>
-                <li style ="float: right;"><a href = "">Gmail</a></li>
-            </ul>
+        <!-- Google Homepage Header -->
+        <header id="header">
+            <div class="left-side">
+                <ul class="left-links">
+                    <li>
+                        <a href = "#">About</a>
+                    </li>
+                    <li>
+                        <a href = "#">Store</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-side">
+                <ul class="right-links">
+                    <li>
+                        <a href = "#">Gmail</a>
+                    </li>
+                    <li>
+                        <a href = "#">Images</a>
+                    </li>
+                    <li>
+                        <!-- <i class="fas fa-bars"></i> -->
+                    </li>
+                </ul>
+            </div>
+            <div class="profile-picture">
+
+            </div>
+
         </header>
-        <div>
-            <img alt = "Google" src ="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> 
-        </div>
+
+        <!-- Google Homepage main area -->
+        <section id="main-area">
+            <div class="logo">
+                <img alt = "Google" src ="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> 
+            </div>
+            <div>
+                <i class="fas fa-search"></i>
+            </div>
+            <form class="search-box">
+                <input type ="search" class="google-searchbox"> 
+            </form>
+            <div>
+                <i class="fas fa-microphone"></i>
+            </div>
+            <div class="buttons">
+                <button class ="google-buttons" >Google Search</button>
+                <button class ="google-buttons">I'm Feeling Lucky</button>
+            </div>
+        </section>
         
-        <form>
-            <input type ="search" name = "Google Searchbox"> 
-        </form>
-            
-        <div>
-            <button class ="google-buttons" >Google Search</button>
-            <button class ="google-buttons">I'm Feeling Lucky</button>
-        </div>
-    
-    
-        <footer>
-            <ul>
-                <li><a href = "">Advertising</a></li>
-                <li><a href = "">Business</a></li>
-                <li><a href = "">How Search Works</a></li>
-                <li style="float: right;"><a href = "">Settings</a></li>
-                <li style="float: right;"><a href = "">Terms</a></li>
-                <li style="float: right;"><a href = "">Privacy</a></li>
-            </ul>
+        <!-- Google Homepage Footer area -->
+        <footer id="footer">
+            <div class="left-footer">
+                <ul class="left-links">
+                    <li>
+                        <a href = "#">Advertising</a>
+                    </li>
+                    <li>
+                        <a href = "#">Business</a>
+                    </li>
+                    <li>
+                        <a href = "#">How Search Works</a>
+                    </li>
+                </ul>
+            </div>  
+            <div class="right-footer"> 
+                <ul class=right-links>
+                    <li>
+                        <a href = "#">Settings</a>
+                    </li>
+                    <li>
+                        <a href = "#">Terms</a>
+                    </li>
+                    <li>
+                        <a href = "#">Privacy</a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
